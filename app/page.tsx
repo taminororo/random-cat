@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react";
-
+import Link from "next/link";
 type Image = {
   url: string;
 };
@@ -14,6 +14,8 @@ const fetchImage = async (): Promise<Image> => {
 };
 
 export default function CatPage() {
+  
+
   const [imageUrl, setImageUrl] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   
@@ -34,6 +36,7 @@ export default function CatPage() {
 
   return (
     <div className="page">
+      <Link href="/hello">hello画面へ</Link>
       <button className="button" onClick={handleClick}>他のにゃんこも見る</button>
       <div className="frame">
         {loading ? (
