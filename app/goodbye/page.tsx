@@ -9,7 +9,7 @@ export default function Home() {
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <div>      
           <p>You clicked {count} times</p>      
-          <button className = "bg-blue-500"onClick={() => setCount(count + 1)}>        
+          <button onClick={() => setCount(count + 1)}>        
             Click me
           </button>    
         </div>
