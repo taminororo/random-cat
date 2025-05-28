@@ -1,5 +1,6 @@
 'use client'  //Next.jsの仕様
 import React, { useState } from 'react';
+import Button from '../../component/Button'; // Buttonコンポーネントをインポート
 
 
 export default function Home() {
@@ -9,9 +10,9 @@ export default function Home() {
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <div>      
           <p>You clicked {count} times</p>      
-          <button onClick={() => setCount(count + 1)}>        
+          <Button onClick={() => setCount(count + 1)}>
             Click me
-          </button>    
+          </Button> 
         </div>
       </main>
     </div>
